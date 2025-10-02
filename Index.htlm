@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Reset & style de base --- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #222;
+      color: white;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    /* --- Icône hamburger --- */
+    .menu-toggle {
+      cursor: pointer;
+      display: block;
+      width: 30px;
+      height: 22px;
+      position: relative;
+    }
+
+    .menu-toggle span {
+      background: white;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      left: 0;
+      transition: 0.3s;
+    }
+    .menu-toggle span:nth-child(1) { top: 0; }
+    .menu-toggle span:nth-child(2) { top: 9px; }
+    .menu-toggle span:nth-child(3) { top: 18px; }
+
+    /* --- Navigation --- */
+    nav {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100vh;
+      background: #333;
+      transition: right 0.3s ease;
+      padding-top: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* --- Quand menu actif --- */
+    nav.active {
+      right: 0;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Mon Portfolio</h1>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#qui-suis-je">Qui suis-je</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#reussites">Réussites</a></li>
+      <li><a href="#projet">Mon Projet</a></li>
+      <li><a href="#aspirations">Aspirations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="accueil">
+    <h2>Bienvenue</h2>
+    <p> Aujourd’hui, je développe mon propre projet de marque, une aventure qui réunit mes valeurs, ma créativité et mon envie de construire quelque chose qui me ressemble.
+À travers ce site, je partage mon parcours, mes compétences et mon projet.</p>
+    <img src="ton-image.jpg" alt="Photo de profil" style="max-width:200px;">
+  </section>
+
+  <section id="qui-suis-je">
+    <h2>Qui suis-je ?</h2>
+    <p>[Présentation rapide : ta personnalité, tes valeurs, une anecdote marquante].</p>
+  </section>
+
+  <section id="parcours">
+    <h2>Mon parcours</h2>
+    <p>[Tes études, formations, expériences associatives/professionnelles].</p>
+  </section>
+
+  <section id="competences">
+    <h2>Mes compétences</h2>
+    <ul>
+      <li>Compétence technique (ex : design, gestion de projet…)</li>
+      <li>Soft skill (ex : organisation, créativité, esprit d’équipe…)</li>
+      <li>Outils maîtrisés (ex : Canva, Excel, réseaux sociaux…)</li>
+    </ul>
+  </section>
+
+  <section id="reussites">
+    <h2>Mes réussites</h2>
+    <p>[Un projet scolaire, perso ou pro dont tu es fier(e)].</p>
+  </section>
+
+  <section id="projet">
+    <h2>Mon projet de marque</h2>
+    <p>Je développe actuellement ma propre marque : <strong>[Nom de ta marque]</strong>.</p>
+    <p>Ce projet est né de [ta motivation / ton inspiration]. Mon objectif est de créer [ton concept : mode, lifestyle, innovation, etc.].</p>
+    <p>Il me permet de mettre en pratique mes compétences en [design, marketing, communication, gestion...].</p>
+    <img src="logo-ou-illustration.jpg" alt="Logo de ma marque" style="max-width:200px;">
+  </section>
+
+  <section id="aspirations">
+    <h2>Mes aspirations</h2>
+    <p>[Le métier ou le secteur qui t’attire, tes objectifs à moyen/long terme].</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:tonmail@example.com">tonmail@example.com</a></p>
+    <p><a href="https://linkedin.com/in/tonprofil" target="_blank">Mon LinkedIn</a></p>
+    <p><a href="CV.pdf" target="_blank">Télécharger mon CV</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 [Ton Nom] - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script Menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
