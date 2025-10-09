@@ -1,0 +1,169 @@
+:root {
+  --color-bg: #FFFFFF;
+  --color-text: #222222;
+  --color-primary: #E26A5E;
+  --color-secondary: #B7C9A8;
+  --color-accent: #D2BCFF;
+  --color-hover: #F6E9D7;
+  --font-main: 'Inter', Arial, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+/* Reset & base */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  font-family: var(--font-main);
+  line-height: 1.7;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+header {
+  background: var(--color-accent);
+  color: var(--color-text);
+  padding-top: 30px;
+  text-align: center;
+}
+header h1.manuscrit {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  color: var(--color-primary);
+}
+header .citation {
+  font-style: italic;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: bold;
+  padding: 0.4em 0.9em;
+  border-radius: 20px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+header nav ul li a:hover {
+  background: var(--color-hover);
+  color: var(--color-primary);
+}
+.section {
+  padding: 50px 0;
+}
+.bg-light {
+  background: var(--color-hover);
+}
+.section h2.manuscrit {
+  font-family: var(--font-script);
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-icon {
+  color: var(--color-secondary);
+  font-size: 2rem;
+}
+.skills-list, .timeline, #aspirations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skills-list li, #aspirations ul li {
+  margin-bottom: 0.8em;
+  padding-left: 1.2em;
+  position: relative;
+}
+.skills-list li:before, #aspirations ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 1.2em;
+}
+.timeline li {
+  margin-bottom: 1.2em;
+}
+.timeline span {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 7px;
+  font-size: 1em;
+  font-family: var(--font-main);
+}
+form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+form button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: var(--color-text);
+}
+.social-links {
+  margin-top: 18px;
+}
+.social-links a {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  margin-right: 18px;
+  transition: color 0.2s;
+}
+.social-links a:hover {
+  color: var(--color-secondary);
+}
+footer {
+  background: var(--color-accent);
+  color: var(--color-text);
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1em;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 6px;
+  }
+  header h1.manuscrit {
+    font-size: 2rem;
+  }
+  .section h2.manuscrit {
+    font-size: 1.4rem;
+  }
+}
