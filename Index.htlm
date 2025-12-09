@@ -1,118 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - Alicia Borin</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-  <!-- Font Awesome pour les icônes -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KALON — La marque</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="manuscrit">Alicia Borin</h1>
-      <p class="citation">« Je ne perds jamais, soit je gagne soit j’apprends. » <span>- N. Mandela</span></p>
-      <nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navigation principale">
         <ul>
-          <li><a href="#about"><i class="fa-solid fa-user"></i> À propos</a></li>
-          <li><a href="#parcours"><i class="fa-solid fa-graduation-cap"></i> Parcours</a></li>
-          <li><a href="#competences"><i class="fa-solid fa-lightbulb"></i> Compétences</a></li>
-          <li><a href="#projets"><i class="fa-solid fa-rocket"></i> Projets</a></li>
-          <li><a href="#aspirations"><i class="fa-solid fa-globe"></i> Aspirations</a></li>
-          <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+          <li><a href="#creatrice">CRÉATRICE</a></li>
+          <li><a href="#la-marque">LA MARQUE</a></li>
+          <li><a href="#drop-001">DROP 001</a></li>
+          <li><a href="#drop-002">DROP 002</a></li>
+          <li><a href="#drop-003">DROP 003</a></li>
         </ul>
       </nav>
+
+      <div class="socials">
+        <a href="#" aria-label="Instagram" class="icon"> 
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="icon">
+          <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.2V12h2.2V9.4c0-2.1 1.3-3.3 3.2-3.3.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.3V12h2.3l-.4 2.9h-1.9v7A10 10 0 0 0 22 12z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="icon">
+          <svg viewBox="0 0 24 24"><path d="M22 5.8c-.6.3-1.2.5-1.9.6.7-.4 1.2-1 1.4-1.8-.7.4-1.5.7-2.3.9A4 4 0 0 0 12 9v.5A11 11 0 0 1 3 4.6a4 4 0 0 0 1.2 5.3c-.5 0-1-.2-1.5-.4 0 1.6 1 3 2.5 3.4-.5.1-1 .1-1.6.1.5 1.4 2 2.4 3.8 2.5A8 8 0 0 1 2 19.5a11 11 0 0 0 6 1.7c7.2 0 11.1-6 11.1-11.2v-.5A7.7 7.7 0 0 0 22 5.8z" fill="currentColor"/></svg>
+        </a>
+      </div>
     </div>
   </header>
-  
-  <main>
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="manuscrit"><i class="fa-solid fa-user section-icon"></i> À propos de moi</h2>
+
+  <!-- SECTION CREATRICE (avec lien "Mon parcours") -->
+  <section id="creatrice" class="creatrice container">
+    <div class="creatrice-grid">
+      <aside class="creatrice-side" aria-labelledby="side-title">
+        <div id="side-title" class="side-top">
+          <div class="looking">Recherche d'une alternance<br><strong>Septembre 2025</strong></div>
+        </div>
+
+        <div class="contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>Téléphone: <a href="tel:0644709242">06.44.70.92.42</a></li>
+            <li>Email: <a href="mailto:a.borin@ileps.fr">a.borin@ileps.fr</a></li>
+            <li>Ville: Villiers‑Le‑Bel</li>
+            <li>Permis: B (en cours)</li>
+          </ul>
+        </div>
+
+        <div class="formations">
+          <h4>Formations</h4>
+          <ul>
+            <li>Licence Professionnelle Commercialisation — ILEPS (2023‑2026)</li>
+            <li>Baccalauréat — Lycée Claude Bernard (2023)</li>
+            <li>Formation Secourisme PSC1 (2022)</li>
+            <li>Service National Universel — Internat d'excellence de Sourdun (2022)</li>
+          </ul>
+        </div>
+
+        <div class="competences">
+          <h4>Compétences</h4>
+          <ul>
+            <li>Gestion des réseaux sociaux</li>
+            <li>Esprit d'équipe</li>
+            <li>Adaptabilité & polyvalence</li>
+            <li>Leadership, autonomie</li>
+            <li>Créative</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="creatrice-main">
+        <h1 class="creator-name">ALICIA LEEYAH BORIN</h1>
+
+        <div class="profile">
+          <h3>Profil</h3>
+          <p>Créative et dynamique, je suis actuellement à la recherche active d'une alternance en marketing / commerce du sport à partir de Septembre 2025.</p>
+        </div>
+
+        <!-- Remplacement du détail du CV par un simple lien "Mon parcours" -->
+        <div class="cv-link-wrap">
+          <!--
+            Place ton fichier de CV dans assets/ :
+            - pour une image : assets/cv.jpg
+            - pour un PDF : assets/cv.pdf
+            Lien ouvre le fichier dans un nouvel onglet.
+          -->
+          <a class="cv-link" href="assets/cv.jpg" target="_blank" rel="noopener noreferrer">Mon parcours</a>
+          <a class="cv-download" href="assets/cv.jpg" download>Télécharger</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION LA MARQUE -->
+  <section id="la-marque" class="brand container">
+    <h2 class="section-title">LA MARQUE<br><span class="k">KALON</span></h2>
+
+    <div class="brand-grid">
+      <div class="brand-text">
         <p>
-          Drôle, honnête, nature peinture, sérieuse, organisée, téméraire, créative et respectueuse.<br>
-          Je suis une personne polyvalente, toujours de bon conseil et spontanée !
+          KALON est une marque streetwear créative née du désir de fusionner l'art, la culture urbaine et l'expression personnelle.
+          Plus qu'un simple projet vestimentaire, KALON est une expérience visuelle et émotionnelle. Son nom, inspiré du mot grec "kalon",
+          évoque une idée profonde : celle d'une beauté qui vient de l'intérieur, sincère, brute et imparfaite.
+        </p>
+
+        <p>
+          Dans un monde où l'image prend souvent le pas sur l'essence, KALON revendique l'authenticité. Chaque création est pensée
+          comme un manifeste artistique : des formes organiques, des textures libres, des silhouettes atypiques autant d'éléments
+          qui traduisent la richesse de l'âme et la puissance de l'individualité.
+        </p>
+
+        <p>
+          KALON s'adresse à celles et ceux qui voient dans le vêtement un moyen de communication, une extension de leur identité.
+          Les designs se construisent autour d'une idée simple : exprimer sans filtre ce que l'on ressent.
         </p>
       </div>
-    </section>
-    
-    <section id="parcours" class="section bg-light">
-      <div class="container">
-        <h2 class="manuscrit"><i class="fa-solid fa-graduation-cap section-icon"></i> Parcours</h2>
-        <ul class="timeline">
-          <li>
-            <span>Ileps, Baccalauréat</span>
-            <p>La sociologie m’a appris à aimer les débats et à m’ouvrir à différents points de vue.</p>
-          </li>
-          <li>
-            <span>Sport</span>
-            <p>Le sport m’a enseigné le travail d’équipe, la cohésion et la persévérance.</p>
-          </li>
-          <li>
-            <span>Expériences professionnelles</span>
-            <p>J’ai gagné en rigueur, en sérieux et j’ai développé mon sens de l’initiative.</p>
-          </li>
-        </ul>
+
+      <div class="brand-art">
+        <img src="assets/brand-figure.jpg" alt="Illustration marque" />
       </div>
-    </section>
-    
-    <section id="competences" class="section">
-      <div class="container">
-        <h2 class="manuscrit"><i class="fa-solid fa-lightbulb section-icon"></i> Compétences</h2>
-        <ul class="skills-list">
-          <li>Communication sur les réseaux sociaux</li>
-          <li>Gestion de projet, organisation</li>
-          <li>Aisance à l’oral, écoute, créativité, persévérance</li>
-          <li>Maîtrise de Canva, Excel, réseaux sociaux</li>
-          <li>Polyvalence et adaptabilité</li>
-        </ul>
+    </div>
+  </section>
+
+  <!-- DROPS (avec descriptions complètes restaurées) -->
+  <section id="drop-001" class="drop container">
+    <h3 class="drop-title">DROP 001<br><span class="drop-sub">T-SHIRT STICKERS SOULS</span></h3>
+    <div class="drop-grid">
+      <div class="drop-images">
+        <!-- Remplace ces placeholders par tes images tshirt si tu les as -->
+        <div class="product placeholder">T-SHIRT (à ajouter)</div>
+        <div class="product small placeholder">T-SHIRT DOS (à ajouter)</div>
       </div>
-    </section>
-    
-    <section id="projets" class="section bg-light">
-      <div class="container">
-        <h2 class="manuscrit"><i class="fa-solid fa-rocket section-icon"></i> Projets & Réussites</h2>
-        <p>Mon projet : lancer une marque de vêtements qui me ressemble.<br>
-        Prochain challenge : créer une marque reconnue et originale !</p>
+      <div class="drop-text">
+        <p>
+          Une pièce appartenant à une première collection inspirée de la culture streetwear et du concept d'identité visuelle.
+          Sur le devant, on retrouve un design épuré mettant en avant le logo KALON accompagné du slogan "JUST YOU, THE NEW COOL".
+          Ce message suggère une attente et une promesse d'innovation.
+        </p>
+        <p>
+          Le dos du t‑shirt présente une composition graphique de neuf personnages colorés appelés "Souls", chacun représentant une énergie
+          ou une émotion différente à travers la couleur. L'idée est de proposer une pièce qui puisse être personnalisée et rassemblée :
+          chaque commande inclut des stickers "Souls" permettant au consommateur de créer sa propre composition et d'ajouter une dimension
+          ludique et communautaire au vêtement.
+        </p>
+        <p>
+          Ce principe renforce l'engagement du consommateur et crée une expérience produit exclusive : collection, échange et personnalisation
+          sont au cœur du concept.
+        </p>
       </div>
-    </section>
-    
-    <section id="aspirations" class="section">
-      <div class="container">
-        <h2 class="manuscrit"><i class="fa-solid fa-globe section-icon"></i> Aspirations</h2>
-        <ul>
-          <li>Commerce, mode, sneakers, marketing</li>
-          <li>Management, promotion, innovation</li>
-          <li>Devenir directrice d’une marque populaire à l’international</li>
-        </ul>
+    </div>
+  </section>
+
+  <section id="drop-002" class="drop container alt">
+    <h3 class="drop-title">DROP 002<br><span class="drop-sub">LONGSLEEVE DESERT MUSE</span></h3>
+    <div class="drop-grid">
+      <div class="drop-text">
+        <p>
+          Le DROP 002 exprime le calme à travers la créativité. Cette pièce reprend l'univers graphique de KALON tout en adoptant un style
+          plus sobre et apaisé. À l'avant, un petit motif "Soul" symbolise la personnalité et l'inspiration intérieure ; au dos, le grand logo
+          KALON souligne la confiance et l'identité de la marque. On retrouve également le slogan de la marque apposé discrètement sur les manches.
+        </p>
+        <p>
+          Ce vêtement illustre l'équilibre entre simplicité, expression et sérénité : le calme à travers la créativité symbolise un état d'esprit
+          qui transforme l'énergie créative en quelque chose d'apaisant. Le drop cherche à montrer que la création n'est pas forcément agitation
+          ou chaos, mais peut être une forme de paix. Les couleurs neutres et le graphisme épuré renforcent cette harmonie entre mouvement intérieur
+          et tranquillité visuelle.
+        </p>
       </div>
-    </section>
-    
-    <section id="contact" class="section bg-light">
-      <div class="container">
-        <h2 class="manuscrit"><i class="fa-solid fa-envelope section-icon"></i> Contact</h2>
-        <form>
-          <input type="text" placeholder="Votre nom" required>
-          <input type="email" placeholder="Votre email" required>
-          <textarea placeholder="Votre message" required></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-        <div class="social-links">
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+      <div class="drop-images">
+        <img src="assets/longsleeve.jpg" alt="Longsleeve Desert Muse" class="product" />
       </div>
-    </section>
-  </main>
-  
-  <footer>
+    </div>
+  </section>
+
+  <section id="drop-003" class="drop container">
+    <h3 class="drop-title">DROP 003<br><span class="drop-sub">HODDIE ZIP MIDNIGHT ECHO</span></h3>
+    <div class="drop-grid">
+      <div class="drop-images">
+        <img src="assets/hoodie.jpg" alt="Hoodie Midnight Echo" class="product" />
+      </div>
+      <div class="drop-text">
+        <p>
+          Le passage du "Desert Muse" à "Midnight Echo" traduit une progression émotionnelle et esthétique du projet : on passe d'un univers
+          clair et équilibré à un ton plus profond et symbole. Le bleu nuit devient un fil conducteur, évoquant la création en mouvement —
+          entre calme apparent et intensité intérieure.
+        </p>
+        <p>
+          Le sweat Midnight Echo traduit l'inspiration qui naît dans le silence de la nuit. Sa couleur bleu nuit symbolise à la fois la tranquillité
+          et le chaos intérieur, cet espace mental où les idées se forment et résonnent. Le design présent au dos agit comme un écho artistique,
+          une trace visuelle de réflexion profonde. Le capuchon porte le logo KALON et le zip ainsi que les finitions renforcent l'aspect qualitatif
+          et fonctionnel de la pièce.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Alicia Borin | Portfolio</p>
+      <p>&copy; <span id="year"></span> KALON — Tous droits réservés</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
